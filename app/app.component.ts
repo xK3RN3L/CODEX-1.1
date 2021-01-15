@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   title = 'Angular Search Using ng2-search-filter';
   searchText;
-  heroes = [
+  definitions = [
     { id: 11, name: 'Mr. Nice', country: 'India' },
     { id: 12, name: 'Narco' , country: 'USA'},
     { id: 13, name: 'Bombasto' , country: 'UK'},

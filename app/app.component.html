@@ -4,21 +4,21 @@
 <div class="container">
   <div class="row">
     <div class="search-hero">
-      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching for a hero by id or name or country">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="CODEX 1.1 BY L A $ H K">
     </div>
     <table class="table table-striped">
       <thead>
       <tr>
-        <th>Id</th>
-        <th>Hero Name</th>
-        <th>Country</th>
+        <th>Terminaison</th>
+        <th>Terme / Mot / Nom</th>
+        <th>Definition</th>
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let hero of heroes | filter:searchText">
-        <td>{{hero.id}}</td>
-        <td>{{hero.name}}</td>
-        <td>{{hero.country}}</td>
+      <tr *ngFor="let def of definitions | filter:searchText">
+        <td>{{def.rime}}</td>
+        <td>{{def.name}}</td>
+        <td>{{def.country}}</td>
       </tr>
       </tbody>
     </table>
